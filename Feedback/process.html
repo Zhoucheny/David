@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Progress</title>
+    <style>
+        body { margin: 30px; }
+
+    </style>
+    <script>
+        function setProgress() {
+            var progress = document.getElementById("progressBar");
+            setInterval(setProgress, 500);
+            progress.value += 10;
+
+        }
+
+    </script>
+</head>
+
+<body onLoad="setProgress()">
+<h3>Submit</h3>
+Progress of upload:
+<progress id="progressBar" max="100" value="0"></progress><br>
+Upload successful
+
+</body>
+</html>
